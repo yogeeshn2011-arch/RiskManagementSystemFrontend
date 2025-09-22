@@ -1,0 +1,22 @@
+{
+    "noWorkcaseDataAvailable": "作業ケースのデータがありません",
+    "serverError": "問題が発生しました。管理者にお問い合わせください。",
+    "systemMessage": "問題が発生しました。もう一度お試しください。",
+    "networkError": "ネットワークエラーが発生しました。インターネット接続を確認して、もう一度お試しください。",
+    "validateCreateWorkcase": "ワークケースを作成するには、すべての必須フィールドに入力してください",
+    "workcaseCreationError": "ワークケースの作成中に予期しないエラーが発生しました。もう一度お試しください",
+    "workcaseDeleteConfirmation": "名前付きの案件を削除してもよろしいですか？",
+    "workphaseCreationError": "作業フェーズの追加または更新中に予期しないエラーが発生しました。もう一度お試しください。",
+    "workriskCreationError": "作業リスクの詳細を追加または更新中に予期しないエラーが発生しました。もう一度お試しください。",
+    "workcaseNameLengthError": "ワークケース名は1〜100文字で入力してください。",
+    "currentChallengesLengthError": "現在の課題は1〜500文字で入力してください。",
+    "resourceMigrationDateLengthError": "リソース移行日は1〜15文字で入力してください。",
+    "businessUseStartDateLengthError": "業務利用開始日は1〜15文字で入力してください。",
+    "initialOperationDateLengthError": "初期運用開始日は1〜15文字で入力してください。",
+    "commentsLengthError": "コメント欄は1文字以上500文字以内で入力してください",
+    "sessionExpiredMessage": "トークン（セッション）の有効期限が切れました。「OK」をクリックして更新し、続行してください。",
+    "emptyFieldCheck": "先に進むには、少なくとも1つの項目を入力してください。",
+    "approveStatusRequiredForPhase": "「{phase}」フェーズの承認ステータスを選択してください。"
+
+
+}

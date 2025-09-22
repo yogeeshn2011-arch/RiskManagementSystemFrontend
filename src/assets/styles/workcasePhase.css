@@ -1,0 +1,117 @@
+/* 
+* Styles for Workcase Phase Module
+* --------------------------------
+* This file contains styles specific to the Workcase Phase components.
+*/
+.workcase-input-wrapper {
+  position: sticky;
+  left: 0;
+  padding: 10px 16px;
+  font-weight: 600;
+  margin-top: -5px;
+}
+
+.phase-table-layout {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.phase-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px 1px;
+  margin-top: 10px;
+}
+
+.phase-table th,
+.phase-table td {
+  border: 1px solid #cdcdcd;
+  padding: 12px;
+  vertical-align: top;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.phase-table th {
+  background-color: #A3D9CC;
+  text-align: center;
+}
+
+.sticky-label-cell {
+  position: sticky;
+  left: 0; 
+  background-color: #A3D9CC;
+  color: black;
+  font-weight: 500;
+  min-width: 120px;
+  text-align: left !important;
+  padding-right: 16px;
+  z-index: 2; 
+}
+
+.custom-approver-multiselect {
+    flex: 1;
+    position: relative;
+    width: 100%;
+  }
+
+  .approver-dropdown-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: left;
+  }
+  
+  .approver-dropdown-arrow {
+    font-size: 26px;
+    position: relative;
+    height: 18px;
+    left: 12px;
+    bottom: 9px;
+  }
+  
+  .approver-dropdown-header .arrow {
+    font-size: 1.2rem;
+    margin-left: 8px;
+  }
+  
+  .approver-dropdown-list {
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 303px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+  }
+  
+  .approver-dropdown-item {
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+  }
+
+.approve-status-dropdown{
+  padding: 6px 25px;
+  border-radius: 0px;
+  width: 304px
+}
+
+ .phase-textarea {
+    flex: 1;
+    padding: 12px 10px;
+    font-size: 0.95rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    min-height: 120px;
+    width: 283px;
+    resize: vertical;
+  }

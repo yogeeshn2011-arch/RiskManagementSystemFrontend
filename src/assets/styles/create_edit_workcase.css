@@ -1,0 +1,17 @@
+/* 
+* Styles for Create & Edit workcase modules
+*/
+
+.department-dropdown{
+  width: 100%;
+}
+
+.create-textarea, .edit-textarea {
+  flex: 1;
+  border: 1px solid rgb(206, 212, 218);
+  position: relative;
+  width: 823px;
+  resize: vertical;
+  min-height: 180px;
+  border-radius: 4px;
+}

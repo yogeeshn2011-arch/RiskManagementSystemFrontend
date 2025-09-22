@@ -1,0 +1,474 @@
+/* 
+ * Base CSS Styles for the Application
+ * ------------------------------------
+ * This file contains global styles including layout, header, footer, buttons, dropdowns, 
+ * and utility classes.
+ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#app, .dashboard-container {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F3F3;
+}
+
+/*Application Topbar */
+.header {
+  position: relative;
+  background-color: #199c4b;
+  color: white;
+  padding: 0.63rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: bold;
+  flex: 1;
+  transform: translateX(140px);
+}
+
+.project-logo {
+  border-radius: 8px;
+  position: absolute;
+  height: 38px;
+}
+
+.parent-department {
+  padding-right: 15px;
+}
+
+/* Language Selector */
+.language-select {
+  position: relative;
+  display: inline-block;
+  width: 96px;
+  height: 28px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.language-select:hover {
+  background-color: #f0f0f0;
+  border-color: #666;
+}
+
+.select-language {
+  width: 100%;
+  height: 100%;
+  padding-left: 26px;
+  padding-right: 20px;
+  border: none;
+  font-size: 15px;
+  background-color: transparent;
+  appearance: none;
+  cursor: pointer;
+}
+
+.lang-icon {
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  height: 23px;
+  width: auto;
+  pointer-events: none;
+  border-radius: 5px;
+}
+
+.lang-dropdown-arrow {
+  position: absolute;
+  top: -4px;
+  left: 71px;
+  font-size: 31px;
+  color: #555;
+  pointer-events: none;
+}
+
+/* Footer */
+.footer {
+  padding: 0.18rem;
+  font-size: 0.5rem;
+  color: #666;
+  background-color: #f0f0f0;
+  position: relative;
+  border-top: 1px solid #ddd;
+  top: -2px;
+}
+
+/* Workcase data grid */
+.grid-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.6rem;
+  color: white;
+  background-color: #199c4b;
+  min-height: 27px;
+}
+
+.grid-refresh-button {
+  background: white;
+  color: #d9534f;
+  border: none;
+  padding: 1px 6px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
+
+.grid-refresh-button:hover {
+  background-color: #f8d7da;
+  color: #c82333;
+}
+
+.grid-body{
+  width: 100%; 
+  height: 340px;
+}
+
+/* WorkCase Tabulator Table Styles */
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title {
+  min-height: 22px;
+}
+
+.tabulator-cell {
+  white-space: normal !important;
+  word-break: break-word;
+  height: 50px !important;
+  vertical-align: top !important;
+}
+
+.tabulator .tabulator-header-filter {
+  display: block !important;
+  height: auto !important;
+}
+
+
+/*Dashboard-dropdowns*/
+.dropdown-1{
+  position: relative;
+  left: 23px;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+
+.dashboard-dept-dropdown {
+  width: 255px !important;
+}
+
+.dropdown-selected {
+  position: relative;
+  flex: 1;
+  background-color: #fff;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 0.95rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-dep-selected{
+  height:18px!important;
+}
+
+.dep-dropdown-list {
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 330px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0px;
+  padding: 4px;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.dashboard-dep-dropdownList{
+  width: 245px !important;
+}
+
+.dropdown-item {
+  position: relative;
+  padding: 6px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  background-color: #e6f7ff;
+} 
+
+.main-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+}
+
+.sub-dropdown-list {
+  position: absolute;
+  top: 0;
+  left: 332px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  list-style: none;
+  width: 120px;
+  z-index: 1001;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 4px 0;
+  margin: 0;
+}  
+
+.dashboard-sub-dropdown{
+  left: 248px !important;
+}
+
+.sub-dropdown-item {
+  padding: 4px;
+  cursor: pointer;
+}
+
+.sub-dropdown-item:hover {
+  background-color: #d4f1f9;
+} 
+
+.dropdown-arrow {
+  position: absolute;
+  right: -1px;
+  font-size: 1.5rem;
+  color: #555;
+  pointer-events: none; 
+}
+
+.nested-dropdown-arrow {
+  margin-left: 275px;
+  color: #555;
+}
+
+.dashboard-dep-dropdown-arrow{
+  margin-left: 189px !important;
+}
+
+.dropdown-2{
+  position: relative;
+  right: 23px;
+}
+
+.filter-label{
+  display: inline-block;
+  height: 35px;
+  width: 165px;
+  align-content: center;
+  background-color: #199c4b;
+  color: white;
+}
+
+.select-box{
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  width: 255px;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn-search {
+  background-color: #17a2b8;
+  color: white;
+  position: relative;
+  left: 24px;
+  width: 90px;
+  top: 4px;
+  height: 32px;
+  font-size: 16px;
+}
+
+.btn-search:hover {
+  background-color: #117a8b;
+  color: #343434;
+}
+
+.btn-new {
+  background-color: #3ba0d2;
+  color: white;
+  height: 28px;
+}
+
+.btn-new:hover {
+  background-color: #2a7aa1;
+  color: #343434;
+}
+
+.btn-phase {
+  background-color: #919593;
+  color: white;
+  height: 28px;
+}
+
+.btn-phase:hover {
+  background-color: #707974;
+  color: #343434;
+}
+
+.btn-risk {
+  background-color: #d69e2e;
+  color: white;
+  height: 28px;
+}
+
+.btn-risk:hover {
+  background-color: #b57b24;
+  color: #343434;
+}
+
+.btn-edit {
+  background-color: #5a67d8;
+  color: white;
+  height: 28px;
+}
+
+.btn-edit:hover {
+  background-color: #4c51a0;
+  color: #343434;
+}
+
+.btn-delete {
+  background-color: #e53e3e;
+  color: white;
+  height: 28px;
+}
+
+.btn-delete:hover {
+  background-color: #c53030;
+  color: #343434;
+}
+
+.grid-buttons {
+  justify-content: right;
+  position: relative;
+  right: 24px;
+  height: 15px;
+  gap: 0.5rem;
+}
+
+input.select-row[type="checkbox"] {
+  accent-color: #919593;
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* Background disabled when modal is opened */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

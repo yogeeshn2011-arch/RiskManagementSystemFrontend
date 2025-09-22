@@ -1,0 +1,105 @@
+/* 
+* Styles for Risk Analysis module
+* --------------------------------
+* This file contains styles speicific to the Risk analysis components.
+*/
+
+.modal-body select,
+.modal-body input {
+  min-width: 100px !important;
+}
+
+.workcase-input-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  padding: 0 15px;
+}
+
+.workcase-input-wrapper label {
+  margin-right: 10px;
+  font-weight: 500;
+  min-width: 140px;
+}
+
+.workcase-input-wrapper input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* Table Styling */
+.risk-table {
+  border-collapse: separate;
+  border-spacing: 1.2px 1.2px;
+  border: 1px solid #ddd; 
+}
+
+.risk-table th,
+.risk-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+
+/* Color-Coding and Table Section Styles */
+.sticky-col {
+  position: sticky;
+  left: -2px;
+  z-index: 5;
+  background-color: #A3D9CC;
+  color: black;
+  font-weight: 500;
+  min-width: 120px;
+  text-align: left !important;
+}
+
+.section-header {
+  background-color: #A3D9CC;
+  color: black;
+  font-weight: 500;
+}
+
+.scope-header, .scope-value {
+  background-color: #D0ECE7;
+  color: black;
+  font-weight: 500;
+}
+
+/* Alternating Row Colors */
+.risk-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.risk-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* For better table row styling */
+.risk-table input[type="checkbox"] {
+  cursor: pointer;
+  margin: 0;
+  transform: scale(1.2);
+}
+
+/* Styling for the remarks textarea */
+.remarks-input {
+  position: relative;
+  width: 1900px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  resize: vertical;
+  background-color: #fff;
+  min-height: 102px;
+  flex-grow: 0; 
+}
+
+/* Last row for remarks */
+.risk-table .remarks-row td {
+  padding: 15px 10px;
+}

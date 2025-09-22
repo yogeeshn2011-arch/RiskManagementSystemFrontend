@@ -1,0 +1,21 @@
+{
+    "noWorkcaseDataAvailable" : "No Workcase Data Available",
+    "serverError" : "Something went wrong. Please contact the admin.",
+    "systemMessage" : "Something went wrong. Please try again.",
+    "networkError": "Network error occurred. Please check your internet connection and try again.",
+    "validateCreateWorkcase" : "Please fill in all required fields to create a Workcase",
+    "workcaseCreationError" : "Unexpected error occurred while creating the Workcase. Please try again.",
+    "workcaseDeleteConfirmation" : "Are you sure you want to delete the case with name(s)?",
+    "workphaseCreationError": "An unexpected error occurred while adding/updating the work phases. Please try again.",
+    "workriskCreationError": "An unexpected error occurred while adding/updating the work risk details. Please try again.",
+    "workcaseNameLengthError": "The Workcase Name should be between 1 and 100 characters long.",
+    "currentChallengesLengthError": "The Current Challenges field should be between 1 and 500 characters long.",
+    "resourceMigrationDateLengthError": "The Resource Migration Date should be between 1 and 15 characters long.",
+    "businessUseStartDateLengthError": "The Business Use Start Date should be between 1 and 15 characters long.",
+    "initialOperationDateLengthError": "The Initial Operation Date should be between 1 and 15 characters long.",
+    "commentsLengthError": "The Comments field should be between 1 and 500 characters long",
+    "sessionExpiredMessage": "The token(session) has expired. Click 'OK' to refresh and continue.",
+    "emptyFieldCheck": "At least one field must be filled out to proceed.",
+    "approveStatusRequiredForPhase": "Please select an approve status for the '{phase}' phase."
+
+}
